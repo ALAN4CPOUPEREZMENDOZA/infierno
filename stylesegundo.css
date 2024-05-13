@@ -1,0 +1,65 @@
+body{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    background-image: url('Fondo.jpg');
+}
+.Titulo{
+    background-color: #393838;
+    width: 80%;
+    height: 50px;
+    margin-bottom: 20px;
+    padding: 10px;
+    font-size: 50px;
+    color: #f0e9e9;
+    align-items: center;
+    border: none;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+}
+.barra_Lateral{
+    position: fixed;
+    left: -250px; /*Ancho de la barra lateral*/
+    top: 0;
+    bottom: 0;
+    width: 250px;  /*Ancho barra lateral*/
+    background-color: rgba(240,240,240,0.8);
+    transition: left 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+.barra_lateral button{
+    width: 80%;
+    height: 80px;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    margin-bottom: 20px;
+    padding-left: 10px;
+    text-align: left;
+}
+.barra_lateral button.btnHome{
+    background-image: url('/home.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center left;
+}
+.barra_lateral button.btnSiguiente{
+    background-image: url('/Flecha_Dere.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center left;
+}
+.barra_lateral button.btnAnterior{
+    background-image: url('/Flecha_Izq.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center left;
+}
+.barra_lateral button:hover{
+    background-color: #706767;
+}
